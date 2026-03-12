@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pixelpulse-landing-page",
+  "private_key_id": "399193881af5e641d3a619d831e5e3d2bb7b4bf8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDH63DVZA7cm4q7\n49Jm9rgUgXKjZ4QBl2pCpTLX5WgBjESzFE+v0z9T9zg5wwAdBWylNl0AeaGpdbb0\n0u3qXQVh8G4idaTn7Xmk7A6KWnQBs6qKTTMPWDqM4aRLw626W8cmAIZ92oSlXUNy\nbKGS15HPvJz5/+IrjpgeAu24NqPrFra46N1Ov2Q9BnuLUnOJWUdl948Raf4BnZrT\nkYi5pNOL308EcBIMhimH/BWInfbqP97v6FVIM3VCC0MSZLho0bnIrU+OpeK6fqnq\n388pyjuAwjA5L8n6j7tO26Oqk9ObeWbQwP7xuipF6kxPNEoOE76XCBp7HDrqZ0VH\n9eYz0tXVAgMBAAECggEAFtm1kiJnY3ZAz3R9CElDZY6dLommqDLpEZiFvPEK6ABj\nGs/jws5DswJzEgEUmnyT/DdAPo1oebDLemTAjlTXCGh9giFNubemO4BCsjQgBdDG\nGZw0zZhxSsiAqatCSGZ0lwag2LI5DpigHKxHdHwAvcyKabXCYWWhQ+7kQnW2WyiP\n+l8tzIjJaNLijdI/uFn2In0EiOLRNfYGn0EMVMYdnWpr/6NA+jI/LR8HGWzLOk47\nCsyWAUuuGPToLYYhJIE69oFqha3ZdYt1j2V0VS4X8rx7a4QsCykFnwUPz0xU3jQ/\nCFvyyNlgzSYtQrKsW5CynlN2muXq25Ud3QE/Feou2QKBgQDoejroQ7UJKt+jcYeo\nV1Kr8NpSmaCpztByV9LvSp2AYy10JUhuxZxNYRgJZ403BBPK01+XnL1pIIOv6ldV\nn9hujLMfARPUON3diTC0YMHqjIyvFrJLQZG1BeSz1jh6A5nXbxqde4ScWNoJetXS\nHaWqCgiWdFQ4e0O7M77z/Vyi+QKBgQDcJeE9fxSTfahhxza+fuxIuGi4c4liHY2h\nsbo402DRMENreYRRWf4sUKVyi9DygnVFQ2m1LDPPdv5oLLK8/sU2KDPO/u9cC6ya\nN4cuCd/bSydgRmn+8Av3kjAXtWOW0UIw5CQf3mv5RTG9MMyC/J7GKPJTi3VSXK9Y\nNnjIOP+kvQKBgAM2vV28oeIQj6roxOFU47WwzLPbn9b5HvSVtjrMo0TFGjnC0i+F\n19VSBE0M+2zJR6TEK0wjRJMRegCSksaCQTG2DDvfffCvIJIRdXTo6YVekAtTmv9j\nVqpT/Idn7LvzFMtfo9SNgpXOvKTo58/RzRp+rQO3c/qb6aHK41boJ8GxAoGAe5fE\nmVrT+W3Nb3+BC3eEPdtR52Pt2CiRUBrQWoDJVQfMgfUJxQZJ/SUVjXZTSyLUpZsQ\nKId1Wt8KOwAFJLe/jgUJ+QcE6F8her775Gvkwl+x7on5jgfEICxxVY4fKBe5Gmuq\noD2lzp77KqTP3CXpGYT5bs/XgPLJ+jMyoe3mD90CgYEAoX64Evo/CcjjezjtmFuY\n2oN8NxhvzHMR0Z2gu75VFunDSGO918LPTJrajniRwqnFDu+njA/s7HfKRBmagT9I\nAEtdzYwUpYdsiNnISvzZeq0fHbGnIUN2IoGW/k3oWOPrT9+ZjWU9980BsrVMZIGR\niSrDhyA1bYznuQ7WVeSUYaA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sheets-backend@pixelpulse-landing-page.iam.gserviceaccount.com",
+  "client_id": "113507458355137592983",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheets-backend%40pixelpulse-landing-page.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
