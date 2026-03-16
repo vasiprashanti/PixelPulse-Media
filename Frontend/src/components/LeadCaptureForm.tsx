@@ -23,15 +23,28 @@ const LeadCaptureForm = () => {
     setLoading(true);
 
     try {
-      await fetch(
-        "https://script.google.com/macros/s/AKfycby9q_Q9rJq3zCW2-T1bIvXrP6Tm01O_uVDOnd5qOEhu7aS3_mrjKFrPSSu1fqwgZr4plg/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(formData),
+      const response = await fetch("http://localhost:5000/api/leads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify({
+          name: formData.name,
+          mobileNumber: formData.mobile,
+          businessName: formData.businessName,
+          businessEmail: formData.email,
+          website: formData.website,
+          budget: formData.budget,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      
       setSubmitted(true);
-    } catch {
+    } catch (error) {
+      console.error(error);
       alert("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
