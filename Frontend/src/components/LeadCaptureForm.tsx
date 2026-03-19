@@ -23,7 +23,7 @@ const LeadCaptureForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/leads", {
+      const response = await fetch("https://pixel-pulse-media-backend.vercel.app/api/leads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -41,7 +41,7 @@ const LeadCaptureForm = () => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-      
+
       setSubmitted(true);
     } catch (error) {
       console.error(error);
