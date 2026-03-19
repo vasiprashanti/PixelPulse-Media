@@ -6,8 +6,12 @@ dotenv.config();
 
 const serviceAccountAuth = new JWT({
   email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-  // Fixes Vercel's tendency to mangle newlines in private keys
-  key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n').replace(/\n /g, '\n'),
+  // Aggressively clean the key for Vercel (removes quotes, fixes newlines, removes accidental spaces)
+  key: process.env.GOOGLE_PRIVATE_KEY
+    ?.trim()
+    .replace(/^["']|["']$/g, '') // Remove surrounding quotes
+    .replace(/\\n/g, '\n')       // Fix escaped newlines
+    .replace(/\n /g, '\n'),      // Fix newline+space issues
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
