@@ -15,6 +15,8 @@ export const createLead = async (req, res) => {
   }
 
   try {
+    // Ensure Google Sheets metadata is loaded (v3 requirement)
+    await doc.loadInfo();
     const sheet = doc.sheetsByIndex[0]; 
 
     await sheet.addRow({
