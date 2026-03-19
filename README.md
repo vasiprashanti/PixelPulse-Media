@@ -1,156 +1,134 @@
-PixelPulse Media – Landing Page
+# PixelPulse Media – Landing Page
 
 A modern, responsive landing page built for PixelPulse Media, a digital marketing agency.
 The website is designed to showcase services, portfolio, and capture leads through a contact form with instant notification features.
 
 This project focuses on lead generation, responsiveness, and easy client communication.
 
-Project Overview
+## Project Overview
 
 PixelPulse Media needed a professional landing page that can:
-
-Showcase the agency’s services
-
-Display portfolio and company information
-
-Capture leads through a form
-
-Notify the client when a lead is submitted
-
-Allow instant communication through WhatsApp
+- Showcase the agency’s services
+- Display portfolio and company information
+- Capture leads through a form
+- Notify the client when a lead is submitted
+- Allow instant communication through WhatsApp
 
 This repository contains the frontend implementation of the landing page.
 
-Features
+## Features
 
-Clean and modern UI
+- **Clean and modern UI**
+- **Fully responsive design** (desktop, tablet, mobile)
+- **Lead capture form**
+- **Email notification** for new leads
+- **WhatsApp integration** for instant inquiries
+- **Fast loading** and optimized layout
+- **Simple and scalable structure**
 
-Fully responsive design (desktop, tablet, mobile)
+## Tech Stack
 
-Lead capture form
+### Frontend
+- React.js
+- Tailwind CSS
+- Vite
 
-Email notification for new leads
+### Icons & UI
+- Lucide Icons
+- Custom UI components
 
-WhatsApp integration for instant inquiries
+## Deployment
+- Vercel
 
-Fast loading and optimized layout
+## Project Structure
 
-Simple and scalable structure
-
-Tech Stack
-
-Frontend
-
-React.js
-
-Tailwind CSS
-
-Vite
-
-Icons & UI
-
-Lucide Icons
-
-Custom UI components
-
-Deployment
-
-Vercel
-
-Project Structure
+```text
 PixelPulse-Media/
 │
-├── public/              # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page sections
-│   ├── assets/         # Images and media
-│   ├── styles/         # Styling files
-│   └── App.jsx         # Main application file
+├── Frontend/           # React frontend application
+│   ├── public/         # Static assets
+│   └── src/
+│       ├── components/ # Reusable UI components
+│       ├── pages/      # Page sections
+│       ├── assets/     # Images and media
+│       ├── styles/     # Styling files
+│       └── App.jsx     # Main application file
+│
+├── Backend/            # Express.js backend
 │
 ├── package.json
 ├── vite.config.js
 └── README.md
-Installation
+```
 
-Clone the repository
+## Installation
 
-git clone https://github.com/Venkata-Pavan-Kumar-Utpala/PixelPulse-Media.git
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Venkata-Pavan-Kumar-Utpala/PixelPulse-Media.git
+   ```
 
-Navigate to the project directory
+2. **Navigate to the project directory**
+   ```bash
+   cd PixelPulse-Media
+   ```
 
-cd PixelPulse-Media
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Install dependencies
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-npm install
+5. **Open in browser**
+   [http://localhost:5173](http://localhost:5173)
 
-Run the development server
-
-npm run dev
-
-Open in browser
-
-http://localhost:5173
-Lead Form Functionality
+## Lead Form Functionality
 
 The landing page includes a lead capture form that collects:
+- Name
+- Email
+- Phone number
+- Message
 
-Name
+**Once submitted:**
+1. The lead information is captured.
+2. A notification is sent to the client.
+3. The user can also contact the agency directly via WhatsApp integration.
 
-Email
-
-Phone number
-
-Message
-
-Once submitted:
-
-The lead information is captured.
-
-A notification is sent to the client.
-
-The user can also contact the agency directly via WhatsApp integration.
-
-Deployment
+## Deployment
 
 The project can be deployed easily using Vercel.
 
-Steps:
+**Steps:**
+1. Push the repository to GitHub.
+2. Import the repository in Vercel.
+3. Configure environment variables if required.
+4. Deploy.
 
-Push the repository to GitHub
+## Future Improvements
 
-Import the repository in Vercel
+- Google Sheets lead storage
+- CRM integration
+- Analytics dashboard
+- SEO optimization
+- Blog or case study section
 
-Configure environment variables if required
+## Author
 
-Deploy
+Developed by:
+- **Venkata Pavan Kumar Utpala**
+- **Anushka Srivastava**
+- **Aayushi Sabharwal**
 
-Future Improvements
+### GitHub
+- [Venkata-Pavan-Kumar-Utpala](https://github.com/Venkata-Pavan-Kumar-Utpala)
+- [anu091104](https://github.com/anu091104)
+- [aayushisabharwal](https://github.com/aayushisabharwal)
 
-Google Sheets lead storage
-
-CRM integration
-
-Analytics dashboard
-
-SEO optimization
-
-Blog or case study section
-
-Author
-
-Developed by
-
-Venkata Pavan Kumar Utpala
-Anushka Srivastava
-Aayushi Sabharwal
-
-GitHub
-https://github.com/Venkata-Pavan-Kumar-Utpala
-https://github.com/anu091104
-https://github.com/aayushisabharwal
-
-License
+## License
 
 This project is licensed under the MIT License.
