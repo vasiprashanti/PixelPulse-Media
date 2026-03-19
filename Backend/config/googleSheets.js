@@ -6,8 +6,22 @@ dotenv.config();
 
 const serviceAccountAuth = new JWT({
   email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-  // Fixes Vercel's tendency to mangle newlines in private keys
-  key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n').replace(/\n /g, '\n'),
+  // Support Base64 encoding for Vercel (much more stable for multiline keys)
+  key: (() => {
+    let key = process.env.GOOGLE_PRIVATE_KEY?.trim() || '';
+    if (!key) return undefined;
+    
+    // Check if it's Base64 (doesn't start with ---)
+    if (!key.startsWith('-----')) {
+      try {
+        key = Buffer.from(key, 'base64').toString('utf8');
+      } catch (e) {
+        console.error('Failed to decode Base64 Google Private Key');
+      }
+    }
+    
+    return key.replace(/\\n/g, '\n').replace(/\n /g, '\n');
+  })(),
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
