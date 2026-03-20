@@ -28,7 +28,7 @@ const Hero = ({ onScrollTo }: HeroProps) => {
         Modern Marketing.
       </h1>
       <p className="hero-sub text-muted-foreground text-base sm:text-lg lg:text-xl mb-[3vh] max-w-[90%]">
-        PixelPulse Media builds structured digital marketing strategies combining SEO, paid ads, content marketing, and visual production.
+        PixlPulse Media builds structured digital marketing strategies combining SEO, paid ads, content marketing, and visual production.
       </p>
       <div className="hero-cta flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
         <button

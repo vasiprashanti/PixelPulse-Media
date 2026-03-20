@@ -1,4 +1,4 @@
-const marqueeItems = ["Pixel Pulse", "Media", "Photography", "Paid Ads", "SEO", "Business Growth"];
+const marqueeItems = ["Pixl Pulse", "Media", "Photography", "Paid Ads", "SEO", "Business Growth"];
 
 const Marquee = () => {
   const items = [...marqueeItems, ...marqueeItems];

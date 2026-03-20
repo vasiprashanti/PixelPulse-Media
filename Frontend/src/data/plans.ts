@@ -6,7 +6,7 @@ export interface Plan {
 
 export const plans: Plan[] = [
   {
-    name: "Starter Pack",
+    name: "Starter",
     description: "Best for new businesses just starting online.",
     features: [
       "Set up your website & social media profiles",
@@ -17,7 +17,7 @@ export const plans: Plan[] = [
     ],
   },
   {
-    name: "Growth Pack",
+    name: "Growth",
     description: "For businesses ready to get more customers.",
     features: [
       "Everything in Starter Pack",
@@ -29,7 +29,7 @@ export const plans: Plan[] = [
     ],
   },
   {
-    name: "Pro Pack",
+    name: "Pro",
     description: "For businesses that want serious growth.",
     features: [
       "Everything in Growth Pack",
