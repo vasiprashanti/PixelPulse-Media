@@ -6,6 +6,7 @@ import leadRoutes from './routes/leadRoutes.js';
 dotenv.config();
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -22,6 +23,13 @@ app.post('/test', (req, res) => {
 
 // Main API routes
 app.use('/api/leads', leadRoutes);
+
+// Run local server in development; Vercel uses the default export.
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}
 
 // IMPORTANT: export app for Vercel (no app.listen)
 export default app;
