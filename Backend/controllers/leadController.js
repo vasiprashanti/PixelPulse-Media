@@ -32,6 +32,18 @@ export const createLead = async (req, res) => {
     res.status(201).json({ success: true, message: 'Lead successfully captured and sent to Google Sheets.' });
   } catch (error) {
     console.error('Failed to add lead:', error);
+
+    const jwtSignatureError =
+      error?.response?.data?.error_description === 'Invalid JWT Signature.' ||
+      error?.response?.data?.error === 'invalid_grant';
+
+    if (jwtSignatureError) {
+      return res.status(500).json({
+        success: false,
+        error: 'Google Sheets authentication failed. Verify backend Google environment variables.',
+      });
+    }
+
     res.status(500).json({ success: false, error: 'Server error while saving lead.' });
   }
 };
