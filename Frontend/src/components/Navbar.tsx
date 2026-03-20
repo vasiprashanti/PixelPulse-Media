@@ -41,7 +41,7 @@ const Navbar = ({ onScrollTo }: NavbarProps) => {
     <>
       <nav className="fixed top-[1.5vh] left-1/2 -translate-x-1/2 w-[90%] max-w-[1200px] flex justify-between items-center py-[1.5vh] px-[2vw] rounded-2xl bg-[hsl(var(--nav-bg))] backdrop-blur-[10px] shadow-[0_6px_20px_rgba(0,0,0,0.08)] z-[1000]">
         <a href="/" className="font-bold text-[1.6rem] font-display">
-          Pixel<span className="text-primary">Pulse</span>
+          Pixl<span className="text-primary">Pulse</span>
         </a>
 
         <div className="hidden md:flex gap-8 font-normal">

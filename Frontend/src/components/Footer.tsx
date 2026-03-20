@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold mb-3 text-[#fff]">
-              Pixel<span className="gradient-text">Pulse</span>
+              Pixl<span className="gradient-text">Pulse</span>
             </div>
             <p className="text-sm text-[#888]">Digital marketing and creative production.</p>
           </div>
@@ -42,7 +42,7 @@ const Footer = () => {
               ✉ pixelpulsemedia202@gmail.com
             </a>
             <div className="flex gap-3 mt-3">
-              {["X", "Li", "IG"].map((s) => (
+              {["Li", "IG"].map((s) => (
                 <a
                   key={s}
                   href="#"
@@ -57,7 +57,17 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-[#333] pt-5 pb-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-          <span>© PixelPulse Media. All rights reserved.</span>
+          <span>
+            © PixlPulse Media. All rights reserved. · Designed & Developed by{" "}
+            <a
+              href="https://techlearnsolutions.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#fff] transition-colors underline underline-offset-2"
+            >
+              Techlearn Solutions
+            </a>
+          </span>
           <div className="flex gap-4">
             <a href="#" className="hover:text-[#fff] transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-[#fff] transition-colors">Terms of Service</a>
